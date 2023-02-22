@@ -1,4 +1,12 @@
+# Django #
+*.log
+*.pot
+*.pyc
 __pycache__
-*.sqlite3
-luan_site\settings.py
-settings.py
+db.sqlite3
+media
+luan_site/settings.py
+
+# Backup files # 
+*.bak 
+

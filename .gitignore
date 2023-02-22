@@ -5,7 +5,7 @@
 __pycache__
 db.sqlite3
 media
-luan_site/settings.py
+settings.py
 
 # Backup files # 
 *.bak 

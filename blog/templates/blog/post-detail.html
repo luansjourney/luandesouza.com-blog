@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load markdown_extras %}
 
 {% block title %}
     {{post.title}}
@@ -39,6 +40,6 @@
     </article>
 </section>
 <main>
-   <p>{{post.content|linebreaks}}</p>
+   <p>{{post.content| markdown | safe }}</p>
 </main>
 {% endblock %}

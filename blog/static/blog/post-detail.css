@@ -22,7 +22,7 @@ body {
   #summary h2 {
     color: white;
     font-size: 4.5rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
   }
   
   #summary article {
@@ -89,3 +89,79 @@ body {
     margin: 1rem;
     border-radius: 8px;
   } 
+
+
+
+
+  @media screen and (min-width: 641px) and (max-width: 1007px) {
+
+    #summary {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: unset;
+      height: unset;
+    }
+
+    #summary h2 {
+      font-size: 3rem;
+      padding: 1rem;
+    }
+
+    #summary div {
+      padding: 1rem;
+    }
+
+    #summary article {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      width: 80%;
+
+      position: unset;
+      top: unset;
+      right: unset;
+      padding: unset;
+      text-align: unset;
+      border-radius: unset;
+    }
+
+    #summary article img {
+      margin-bottom: 1.5rem;
+    }
+
+
+    #summary article div {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+
+  @media (max-width: 640px) {
+
+    #summary {
+      width: 95%;
+      padding: 1rem;
+      max-width: unset;
+      height: unset;
+      text-align: center;
+    }
+
+    #summary h2 {
+      font-size: 2.5rem;
+      padding: 0 0.5rem;
+    }
+
+    #summary div {
+      padding: 1rem;
+    }
+
+
+    #summary article {
+      position: unset;
+      text-align: unset;
+    }
+  }

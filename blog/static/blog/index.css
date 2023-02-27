@@ -43,6 +43,7 @@
   
   #latest-posts h2 {
     text-align: center;
+    font-size: 2rem;
   }
   
   #latest-posts ul {
@@ -60,15 +61,64 @@
   #about {
     text-align: center;
     padding: 3rem;
-    background-color: #e48900;
+    background: linear-gradient(to right top, #390281, #6305dd);
     margin-top: 5rem;
   }
   
   #about h2 {
     font-size: 3rem;
+    color: white;
   }
   
   #about p {
     font-size: 1.5rem;
-    color: #353535;
+    color: white;
   }
+
+/* Responsive styles for screens between 641px and 1007px */
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  
+  
+  #latest-posts {
+    margin: -3rem 1rem 2rem 1rem;
+    padding: 1rem;
+  }
+  
+  #latest-posts h2 {
+    font-size: 1.5rem;
+  }
+  
+  #latest-posts ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+}
+
+  /* Styles for screens 640px or smaller */
+@media (max-width: 640px) {
+
+  #welcome header {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #welcome h2 {
+    margin: 2rem;
+  }
+
+  #latest-posts {
+      margin: -4rem 1rem 2rem 1rem;
+  }
+  #latest-posts h2 {
+    font-size: 1.5rem;
+  }
+
+  #latest-posts ul {
+    flex-direction: column;
+  }
+
+
+}
+
+

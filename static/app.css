@@ -47,3 +47,21 @@ h3 {
 #main-navigation h1 a:active {
   color: white;
 }
+
+@media (max-width: 640px) {
+
+#main-navigation {
+  justify-content: center;
+  padding: 0;
+  border-bottom: 2.5px solid white;
+}
+
+#main-navigation h1 {
+  font-size: 1.5em;
+  width: fit-content;
+}
+
+  #main-navigation nav {
+    display: flex;
+  }
+}
